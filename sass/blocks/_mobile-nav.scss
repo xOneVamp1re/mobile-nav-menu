@@ -48,6 +48,9 @@
         font-size: 16px;
         font-weight: 500;
     }
+    &__lang--active {
+        color: rgb(126, 126, 130);
+    }
 }
 .mobile-nav-menu {
     margin-bottom: auto;
