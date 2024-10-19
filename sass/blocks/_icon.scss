@@ -1,0 +1,26 @@
+
+.icon {
+    width: 16px;
+    height: 16px;
+
+    &--logo {
+        width:97.25px; 
+        height:51.31px;
+    }
+    &--search {
+        width: 17px;
+        height: 17px;
+    }
+    &--call {
+        width: 18px;
+        height: 18px;
+    }
+    &--chat {
+        width: 20px;
+        height: 20px;
+    }
+    &--profile {
+        width: 20px;
+        height: 18px;
+    }
+}

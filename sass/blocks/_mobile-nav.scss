@@ -1,0 +1,77 @@
+.mobile-nav {
+    z-index: 11;
+    position: fixed;
+    inset: 0;
+    width: 320px;
+    height: 100%;
+    padding: 19px 24px 32px 24px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    display: flex;
+    flex-direction: column;
+    row-gap: 46px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    &__logo {
+        margin-right: auto;
+    }
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: left;
+        gap: 16px;
+        margin-bottom: 4px;
+    }
+    &__langs {
+        margin-top: 14px;
+    }
+    &__email {
+    font-size: 16px;
+    font-weight: 500;
+    }
+    &__phone {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+    }
+    &__lang {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+.mobile-nav-menu {
+    margin-bottom: auto;
+    &__list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    &__link {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__link--active {
+        color: rgb(126, 126, 130);
+    }
+    &__link--active::before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: -24px;
+        width: 4px;
+        height: 32px;
+        border-radius: 0 50px 50px 0;
+        background-color: #41F6D7;
+    }
+}
