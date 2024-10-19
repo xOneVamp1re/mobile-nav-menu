@@ -121,25 +121,6 @@ a {
   font-style: normal;
   font-display: swap;
 }
-.main-container {
-  padding: 0 16px;
-  padding-bottom: 35px;
-}
-
-@media (min-width: 767.98px) {
-  .main-container {
-    padding: 0 40px 0 24px;
-    padding-bottom: 35px;
-  }
-}
-@media (min-width: 1119.98px) {
-  .main-container {
-    padding: 0;
-    padding-bottom: 50px;
-    max-width: 1056px;
-    margin: 0 auto;
-  }
-}
 .icon {
   width: 16px;
   height: 16px;
@@ -165,60 +146,6 @@ a {
   height: 18px;
 }
 
-.header {
-  background-color: #fff;
-  padding: 0 16px;
-}
-.header__inner {
-  min-height: 87px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 16px;
-}
-.header__logo-separator {
-  display: none;
-}
-.header__logo {
-  margin-right: auto;
-}
-.header__buttons {
-  display: none;
-}
-.header__bottom-border {
-  border-bottom: 1px solid #d9fff5;
-}
-
-@media (min-width: 768px) {
-  .header {
-    padding: 0 40px 0 24px;
-  }
-  .header__logo-separator {
-    display: block;
-  }
-  .header__buttons {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-  }
-}
-@media (min-width: 768px) and (min-width: 1119.98px) {
-  .header {
-    display: none;
-  }
-}
-.burger-button {
-  width: 40px;
-  height: 40px;
-  background-color: #FF3E79;
-  display: flex;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease-out;
-}
-
 .action-button {
   width: 40px;
   height: 40px;
@@ -235,6 +162,7 @@ a {
   z-index: 11;
   position: fixed;
   inset: 0;
+  overflow-y: auto;
   width: 320px;
   height: 100%;
   padding: 19px 24px 32px 24px;
@@ -305,6 +233,7 @@ a {
   color: #7e7e82;
 }
 .mobile-nav-menu__link--active::before {
+  position: absolute;
   content: '';
   position: absolute;
   top: -4px;

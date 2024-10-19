@@ -2,6 +2,7 @@
     z-index: 11;
     position: fixed;
     inset: 0;
+    overflow-y: auto;
     width: 320px;
     height: 100%;
     padding: 19px 24px 32px 24px;
@@ -71,6 +72,7 @@
         color: rgb(126, 126, 130);
     }
     &__link--active::before {
+        position: absolute;
         content: '';
         position: absolute;
         top: -4px;
