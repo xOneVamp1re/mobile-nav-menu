@@ -289,12 +289,15 @@ a {
   margin-bottom: auto;
 }
 .mobile-nav-menu__list {
-  position: relative;
   display: flex;
   flex-direction: column;
-  row-gap: 32px;
+  row-gap: 24px;
 }
 .mobile-nav-menu__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
   font-size: 16px;
   font-weight: 500;
 }

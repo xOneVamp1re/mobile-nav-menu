@@ -10,17 +10,17 @@
 </head>
 <body>
     <aside class="mobile-nav" aria-label="Мобильная навигация">
-        <header class="mobile-nav__header">
-            <button class="action-button mobile-nav__header-button--cross" type="button">
+        <div class="mobile-nav__header">
+            <button class="action-button mobile-nav__header-button--cross" aria-label="Кнопка закрыть меню" type="button">
                 <svg class="icon icon--cross"><use href="img/icons/sprites.svg#ic_cross"></use></svg>
             </button>
-            <a class="logo mobile-nav__logo" href="#!">
+            <a class="logo mobile-nav__logo" href="#!" aria-label="Логотип компании">
                 <svg class="icon icon--logo"><use href="img/icons/sprites.svg#ic_logo"></use></svg>
             </a>
-            <button class="action-button mobile-nav__header-button--search" type="button">
+            <button class="action-button mobile-nav__header-button--search" aria-label="Кнопка поиска" type="button">
                 <svg class="icon icon--search"><use href="img/icons/sprites.svg#ic_search"></use></svg>
             </button>
-        </header>
+        </div>
         <nav class='mobile-nav-menu'>
             <ul class="mobile-nav-menu__list">
                 <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link mobile-nav-menu__link--active" href="#!">Ремонт техники</a></li>
@@ -33,7 +33,7 @@
                 <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#!">Контакты</a></li>
             </ul>
         </nav>
-        <footer class="mobile-nav__footer">
+        <div class="mobile-nav__footer">
             <div class="mobile-nav__buttons">
                 <button class="action-button mobile-nav__footer-button--call" type="button">
                     <svg class="icon icon--call"><use href="img/icons/sprites.svg#ic_call"></use></svg>
@@ -52,7 +52,7 @@
                 <a class="mobile-nav__lang mobile-nav_lang--en" href="#!" >en</a>
                 <a class="mobile-nav__lang mobile-nav_lang--ch" href="#!" >ch</a>
             </div>
-        </footer>
+        </div>
     </aside>
 
 </body>
