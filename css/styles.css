@@ -124,6 +124,8 @@ a {
 .icon {
   width: 16px;
   height: 16px;
+  fill: #fff;
+  transition: fill 0.3s ease-in-out;
 }
 .icon--logo {
   width: 97.25px;
@@ -150,12 +152,17 @@ a {
   width: 40px;
   height: 40px;
   background-color: #FF3E79;
-  display: flex;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-out;
+}
+.action-button:hover {
+  background-color: #FDDDE6;
+}
+.action-button:hover .icon {
+  fill: #CF3476;
 }
 
 .mobile-nav {
@@ -228,6 +235,9 @@ a {
   min-height: 32px;
   font-size: 16px;
   font-weight: 500;
+}
+.mobile-nav-menu__link:hover:not(.mobile-nav-menu__link--active) {
+  color: #020116;
 }
 .mobile-nav-menu__link--active {
   color: #7e7e82;

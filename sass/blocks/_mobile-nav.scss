@@ -52,6 +52,11 @@
     &__lang--active {
         color: #7E7E82;
     }
+    // &__footer-button--icon-profile {
+    //     width: 20px;
+    //     height: 20px;
+    //     background-image: url('sprites.svg#ic_profile');    
+    // }
 }
 .mobile-nav-menu {
     margin-bottom: auto;
@@ -67,6 +72,9 @@
         min-height: 32px;
         font-size: 16px;
         font-weight: 500;
+        &:hover:not(&--active) {
+            color: #020116;
+        }
     }
     &__link--active {
         color: rgb(126, 126, 130);

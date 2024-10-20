@@ -2,7 +2,8 @@
 .icon {
     width: 16px;
     height: 16px;
-
+    fill: #fff;
+    transition: fill 0.3s ease-in-out;
     &--logo {
         width:97.25px; 
         height:51.31px;
