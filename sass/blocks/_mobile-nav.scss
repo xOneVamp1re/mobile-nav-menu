@@ -72,9 +72,14 @@
         min-height: 32px;
         font-size: 16px;
         font-weight: 500;
-        &:hover:not(&--active) {
-            color: #020116;
-        }
+        transition: transform 0.2 ease-out;
+        
+        @media (min-width:1119.98px) {
+            &:hover:not(&--active) {
+                color: #020116;
+                transform: scale(1.05);
+            }
+        }    
     }
     &__link--active {
         color: rgb(126, 126, 130);

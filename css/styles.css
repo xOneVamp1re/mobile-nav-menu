@@ -158,11 +158,14 @@ a {
   justify-content: center;
   transition: all 0.2s ease-out;
 }
-.action-button:hover {
-  background-color: #FDDDE6;
-}
-.action-button:hover .icon {
-  fill: #CF3476;
+@media (min-width: 1119.98px) {
+  .action-button:hover {
+    background-color: #FDDDE6;
+    transform: scale(1.1);
+  }
+  .action-button:hover .icon {
+    fill: #CF3476;
+  }
 }
 
 .mobile-nav {
@@ -235,9 +238,13 @@ a {
   min-height: 32px;
   font-size: 16px;
   font-weight: 500;
+  transition: transform 0.2 ease-out;
 }
-.mobile-nav-menu__link:hover:not(.mobile-nav-menu__link--active) {
-  color: #020116;
+@media (min-width: 1119.98px) {
+  .mobile-nav-menu__link:hover:not(.mobile-nav-menu__link--active) {
+    color: #020116;
+    transform: scale(1.05);
+  }
 }
 .mobile-nav-menu__link--active {
   color: #7e7e82;

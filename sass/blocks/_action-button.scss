@@ -8,11 +8,13 @@
     justify-content: center;
     transition: all 0.2s ease-out;
     
-    &:hover {
-        background-color: #FDDDE6;
-        .icon {
-            fill: #CF3476;
+    @media (min-width:1119.98px) {
+        &:hover {
+            background-color: #FDDDE6;
+            transform: scale(1.1);
+            .icon {
+                fill: #CF3476;
+            }
         }
     }
-
 }
